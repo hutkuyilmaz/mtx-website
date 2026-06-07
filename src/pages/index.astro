@@ -1,11 +1,59 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import Metrics from "../components/Metrics.astro";
+import Solution from "../components/Solution.astro";
+import Cases from "../components/Cases.astro";
+import Contact from "../components/Contact.astro";
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Materix Nano Teknoloji A.Ş. | Advanced Hydrophobic Coatings">
+	<Navbar />
+
+	<main
+		class="relative pt-20 overflow-x-hidden bg-[#f6f6f5] text-[#414141] font-sans selection:bg-[#44534b] selection:text-white"
+	>
+		<section id="home" class="scroll-mt-20">
+			<Hero />
+		</section>
+
+		<section class="bg-[#44534b] text-[#f6f6f5]">
+			<Metrics />
+		</section>
+
+		<section id="solution" class="py-24 scroll-mt-20">
+			<Solution />
+		</section>
+
+		<section
+			id="cases"
+			class="py-24 bg-white scroll-mt-20 border-t border-b border-gray-100"
+		>
+			<Cases />
+		</section>
+
+		<section id="contact" class="py-24 scroll-mt-20">
+			<Contact />
+		</section>
+	</main>
+
+	<footer class="bg-[#414141] text-[#f6f6f5] py-8 border-t border-gray-800">
+		<div
+			class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400"
+		>
+			<p>
+				&copy; 2026 Materix Nano Teknoloji San. Tic. A.Ş. All rights
+				reserved.
+			</p>
+			<div class="flex gap-6">
+				<a href="#home" class="hover:text-white transition-colors"
+					>Privacy Policy</a
+				>
+				<a href="#home" class="hover:text-white transition-colors"
+					>Terms of Use</a
+				>
+			</div>
+		</div>
+	</footer>
 </Layout>

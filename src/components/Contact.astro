@@ -1,0 +1,89 @@
+<div class="max-w-4xl mx-auto px-6">
+    <div
+        class="bg-white rounded-2xl border border-gray-200 p-8 md:p-12 shadow-xl space-y-8"
+    >
+        <div class="text-center space-y-2">
+            <h2 class="text-2xl md:text-3xl font-bold text-[#414141]">
+                Industrial Procurement Inquiries
+            </h2>
+            <p class="text-sm text-gray-500 max-w-lg mx-auto">
+                Initiate engineering analysis and testing requests for your
+                utility installations.
+            </p>
+        </div>
+
+        <form method="POST" action="/api/inquiry" class="space-y-6">
+            <input
+                type="hidden"
+                name="_bot_protection"
+                class="hidden"
+                tabindex="-1"
+                autocomplete="off"
+            />
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="space-y-2">
+                    <label
+                        for="company_email"
+                        class="block text-xs font-mono uppercase tracking-wider text-gray-600 font-semibold"
+                        >Corporate Email Address</label
+                    >
+                    <input
+                        type="email"
+                        id="company_email"
+                        name="email"
+                        required
+                        autocomplete="email"
+                        class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded text-sm focus:outline-none focus:border-[#44534b] focus:bg-white transition-all text-[#414141]"
+                        placeholder="eng@materix-partner.com"
+                    />
+                </div>
+                <div class="space-y-2">
+                    <label
+                        for="facility_type"
+                        class="block text-xs font-mono uppercase tracking-wider text-gray-600 font-semibold"
+                        >Facility Deployment Vector</label
+                    >
+                    <select
+                        id="facility_type"
+                        name="vector"
+                        required
+                        class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded text-sm focus:outline-none focus:border-[#44534b] focus:bg-white transition-all text-[#414141]"
+                    >
+                        <option value="solar"
+                            >Photovoltaic Array Infrastructure</option
+                        >
+                        <option value="marine">Marine Asset Logistics</option>
+                        <option value="industrial"
+                            >High-Temp Thermal Components</option
+                        >
+                    </select>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <label
+                    for="message"
+                    class="block text-xs font-mono uppercase tracking-wider text-gray-600 font-semibold"
+                    >Material Application Scope Requirements</label
+                >
+                <textarea
+                    id="message"
+                    name="scope"
+                    rows="4"
+                    required
+                    minlength="20"
+                    class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded text-sm focus:outline-none focus:border-[#44534b] focus:bg-white transition-all text-[#414141]"
+                    placeholder="Describe physical dimensions, surface layout constraints, and exposure conditions..."
+                ></textarea>
+            </div>
+
+            <button
+                type="submit"
+                class="w-full bg-[#44534b] hover:bg-[#414141] text-white font-mono uppercase tracking-wider text-sm font-bold py-4 rounded transition-colors shadow-md"
+            >
+                Submit Material Request Protocol
+            </button>
+        </form>
+    </div>
+</div>

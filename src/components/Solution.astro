@@ -1,0 +1,49 @@
+---
+const properties = [
+    {
+        title: "Hydrophobic Shield",
+        desc: "Contact angle alterations exceeding 110 degrees prevent liquid persistence and structural surface fouling.",
+    },
+    {
+        title: "Spray-Applied Scaling",
+        desc: "Optimized for direct integration inside operational plants via high-velocity macro atomization tools.",
+    },
+    {
+        title: "Photocatalytic Decay",
+        desc: "Activated UV breakdown mechanisms clean organic residue on site without external continuous maintenance.",
+    },
+];
+---
+
+<div class="max-w-7xl mx-auto px-6">
+    <div class="max-w-3xl mb-16 space-y-4">
+        <h2
+            class="text-xs uppercase tracking-widest font-mono text-[#44534b] font-bold"
+        >
+            The Solution Architecture
+        </h2>
+        <p class="text-3xl md:text-4xl font-bold text-[#414141] tracking-tight">
+            Multi-functional protection achieved at molecular atomic layers.
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {
+            properties.map((p) => (
+                <div class="bg-white p-8 rounded-xl border border-gray-200/60 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-8 h-8 rounded bg-[#44534b]/10 flex items-center justify-center text-[#44534b]">
+                            <span class="w-2 h-2 rounded-full bg-[#44534b]" />
+                        </div>
+                        <h3 class="text-lg font-bold text-[#414141]">
+                            {p.title}
+                        </h3>
+                        <p class="text-sm text-[#414141]/80 leading-relaxed">
+                            {p.desc}
+                        </p>
+                    </div>
+                </div>
+            ))
+        }
+    </div>
+</div>

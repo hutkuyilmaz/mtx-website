@@ -1,0 +1,86 @@
+---
+const testMatrix = [
+    {
+        facility: "Aegean Alpha Solar",
+        loc: "İzmir, TR",
+        thickness: "0.8 µm",
+        efficiency: "+6.4% gain",
+        status: "Validated",
+    },
+    {
+        facility: "Marmara Marine Lab",
+        loc: "Kocaeli, TR",
+        thickness: "1.2 µm",
+        efficiency: "Fouling Zero",
+        status: "Monitored",
+    },
+    {
+        facility: "Anatolia Wind/PV",
+        loc: "Konya, TR",
+        thickness: "0.9 µm",
+        efficiency: "+5.8% gain",
+        status: "Validated",
+    },
+];
+---
+
+<div class="max-w-7xl mx-auto px-6">
+    <div
+        class="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6 mb-12"
+    >
+        <div class="max-w-2xl space-y-4">
+            <h2
+                class="text-xs uppercase tracking-widest font-mono text-[#44534b] font-bold"
+            >
+                Empirical Proof Matrix
+            </h2>
+            <p class="text-3xl font-bold text-[#414141] tracking-tight">
+                Operational field validation parameters
+            </p>
+        </div>
+        <span
+            class="text-xs font-mono text-gray-400 bg-gray-50 border border-gray-200 px-3 py-1.5 rounded"
+        >
+            As of: June 2026
+        </span>
+    </div>
+
+    <div class="overflow-x-auto rounded-lg border border-gray-200 bg-white">
+        <table class="w-full text-left border-collapse">
+            <thead>
+                <tr
+                    class="bg-gray-50 text-xs font-mono uppercase text-[#414141]/70 tracking-wider border-b border-gray-200"
+                >
+                    <th class="p-4 font-semibold">Test Site Facility</th>
+                    <th class="p-4 font-semibold">Location</th>
+                    <th class="p-4 font-semibold">Film Spec</th>
+                    <th class="p-4 font-semibold">Performance Yield</th>
+                    <th class="p-4 font-semibold text-right">Audit Status</th>
+                </tr>
+            </thead>
+            <tbody class="text-sm divide-y divide-gray-100">
+                {
+                    testMatrix.map((row) => (
+                        <tr class="hover:bg-gray-50/80 transition-colors">
+                            <td class="p-4 font-semibold text-[#414141]">
+                                {row.facility}
+                            </td>
+                            <td class="p-4 text-gray-600">{row.loc}</td>
+                            <td class="p-4 font-mono text-xs bg-gray-50/50">
+                                {row.thickness}
+                            </td>
+                            <td class="p-4 text-[#44534b] font-medium">
+                                {row.efficiency}
+                            </td>
+                            <td class="p-4 text-right">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-200">
+                                    {row.status}
+                                </span>
+                            </td>
+                        </tr>
+                    ))
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
