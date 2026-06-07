@@ -1,15 +1,12 @@
 @import "tailwindcss";
 
-@tailwindcss base;
-@tailwindcss components;
-@tailwindcss utilities;
-
 @theme {
     /* Materix Logonun Canlı Yeşili */
     --color-brand-green: #99cc33;
 
     /* Kurumsal Derin Antrasit / Gece Mavisi */
     --color-brand-dark: #0f172a;
-    /* Fontumuzu tanımladık */
+
+    /* Modern Kurumsal Fontumuz */
     --font-sans: 'Plus Jakarta Sans', sans-serif;
 }
