@@ -3,74 +3,104 @@
 ---
 
 <section
-    class="relative min-h-[90vh] flex items-center gradient-bg py-20 overflow-hidden"
+    class="relative min-h-[90vh] flex items-center gradient-bg py-24 overflow-hidden"
 >
     <div class="absolute inset-0 bg-black/10 z-0"></div>
     <div
         class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-12 gap-12 items-center w-full"
     >
         <div class="md:col-span-7 text-white space-y-6">
+            <div
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-xl"
+            >
+                <span class="w-2 h-2 rounded-full bg-yellow-400 animate-pulse"
+                ></span>
+                <span
+                    class="text-sm font-semibold tracking-wide text-yellow-100"
+                    >Now Scaling Across MENA Region</span
+                >
+            </div>
             <h1
                 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight"
             >
-                Partnering for Regional <br class="hidden sm:inline" /><span
-                    class="text-yellow-300">Energy Leadership</span
+                Partnering for Regional <br /><span class="text-yellow-300"
+                    >Energy Leadership</span
                 >
             </h1>
-            <p class="text-lg text-white/90 max-w-xl leading-relaxed">
-                Yüzeyleri hidrofobik, fotokatalitik ve koruyucu özelliklerle
-                dönüştüren devrimsel ince filmlerimizle sürdürülebilir bir
-                geleceğe öncülük ediyoruz.
+            <p
+                class="text-lg text-white/95 max-w-xl leading-relaxed font-normal"
+            >
+                Deploying advanced nano-coatings that transform solar
+                infrastructure assets into high-yield, self-cleaning power
+                generation facilities.
             </p>
-            <ul class="space-y-3 font-medium text-white/90">
-                <li class="flex items-center gap-3">
-                    <span
-                        class="w-5 h-5 bg-white/20 rounded-full flex items-center justify-center text-xs"
-                        >✓</span
+            <div class="space-y-4 pt-2">
+                <div class="flex items-start gap-3">
+                    <div
+                        class="mt-1 w-5 h-5 rounded-full bg-white/20 flex items-center justify-center text-xs flex-shrink-0"
                     >
-                    Güneş paneli verimliliğini %3 - %9 artırın.
-                </li>
-                <li class="flex items-center gap-3">
-                    <span
-                        class="w-5 h-5 bg-white/20 rounded-full flex items-center justify-center text-xs"
-                        >✓</span
+                        ✓
+                    </div>
+                    <p class="font-medium">
+                        Guaranteed <span class="text-yellow-300 font-bold"
+                            >3% to 9%</span
+                        > permanent efficiency recovery
+                    </p>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div
+                        class="mt-1 w-5 h-5 rounded-full bg-white/20 flex items-center justify-center text-xs flex-shrink-0"
                     >
-                    Temizlik ve bakım maliyetlerini %50 azaltın.
-                </li>
-            </ul>
-            <div class="flex flex-wrap gap-4 pt-4">
+                        ✓
+                    </div>
+                    <p class="font-medium">
+                        Reduction of water consumption and cleaning cycles by <span
+                            class="text-yellow-300 font-bold">50%</span>
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-wrap gap-4 pt-6">
                 <a
                     href="#about"
-                    class="px-8 py-4 bg-yellow-400 text-dark font-bold rounded-xl hover:bg-yellow-300 transition-all shadow-lg shadow-yellow-500/20"
+                    class="px-8 py-4 bg-yellow-400 text-slate-900 font-bold rounded-xl hover:bg-yellow-300 transition-all shadow-lg shadow-yellow-500/20 text-center"
                 >
-                    Explore Partnership →
+                    Explore Partnership Solutions
                 </a>
                 <a
                     href="#calculator"
-                    class="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white font-semibold rounded-xl hover:bg-white/20 transition-all"
+                    class="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white font-semibold rounded-xl hover:bg-white/20 transition-all text-center"
                 >
-                    📊 Schedule Executive Briefing
+                    📊 Try Calculator
                 </a>
             </div>
         </div>
 
         <div
             id="calculator"
-            class="md:col-span-5 bg-white rounded-3xl p-8 shadow-2xl space-y-6 border border-gray-100"
+            class="md:col-span-5 bg-white rounded-3xl p-8 shadow-2xl space-y-6 border border-gray-100 scroll-mt-24"
         >
-            <div class="flex items-center gap-3 border-b border-gray-100 pb-4">
-                <span class="text-2xl">📋</span>
-                <h2 class="text-xl font-bold text-dark">
-                    Quick Revenue Calculator
-                </h2>
+            <div class="flex items-center gap-3 border-b border-slate-100 pb-4">
+                <div
+                    class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center text-xl"
+                >
+                    📋
+                </div>
+                <div>
+                    <h2 class="text-xl font-bold text-slate-900">
+                        Quick Revenue Calculator
+                    </h2>
+                    <p class="text-xs text-slate-400 font-medium">
+                        Estimate your facility's optimization upside
+                    </p>
+                </div>
             </div>
 
             <div class="space-y-2">
                 <div
-                    class="flex justify-between text-sm font-semibold text-gray-600"
+                    class="flex justify-between text-sm font-semibold text-slate-600"
                 >
-                    <label for="power-slider">System Size (Tesis Gücü)</label>
-                    <span id="power-value" class="text-primary-blue font-bold"
+                    <label for="power-slider">Regional Asset Capacity</label>
+                    <span id="power-value" class="text-blue-800 font-bold"
                         >300 MW</span
                     >
                 </div>
@@ -80,20 +110,19 @@
                     min="10"
                     max="1000"
                     value="300"
-                    class="w-full h-2 bg-gray-100 rounded-lg appearance-none cursor-pointer accent-primary-blue"
+                    class="w-full h-2 bg-slate-100 rounded-lg appearance-none cursor-pointer accent-blue-700"
                 />
             </div>
 
             <div class="space-y-2">
                 <div
-                    class="flex justify-between text-sm font-semibold text-gray-600"
+                    class="flex justify-between text-sm font-semibold text-slate-600"
                 >
                     <label for="production-slider"
-                        >Annual Production (Yıllık Üretim)</label
+                        >Baseline Annual Production</label
                     >
-                    <span
-                        id="production-value"
-                        class="text-primary-blue font-bold">450,000 MWh</span
+                    <span id="production-value" class="text-blue-800 font-bold"
+                        >450,000 MWh</span
                     >
                 </div>
                 <input
@@ -102,18 +131,16 @@
                     min="15"
                     max="1500"
                     value="450"
-                    class="w-full h-2 bg-gray-100 rounded-lg appearance-none cursor-pointer accent-primary-blue"
+                    class="w-full h-2 bg-slate-100 rounded-lg appearance-none cursor-pointer accent-blue-700"
                 />
             </div>
 
             <div class="space-y-2">
                 <div
-                    class="flex justify-between text-sm font-semibold text-gray-600"
+                    class="flex justify-between text-sm font-semibold text-slate-600"
                 >
-                    <label for="price-slider"
-                        >Tariff Price (Elektrik Fiyatı)</label
-                    >
-                    <span id="price-value" class="text-primary-blue font-bold"
+                    <label for="price-slider">PPA Tariff Price</label>
+                    <span id="price-value" class="text-blue-800 font-bold"
                         >₺ 3.2 / kWh</span
                     >
                 </div>
@@ -124,57 +151,59 @@
                     max="6.0"
                     step="0.1"
                     value="3.2"
-                    class="w-full h-2 bg-gray-100 rounded-lg appearance-none cursor-pointer accent-primary-blue"
+                    class="w-full h-2 bg-slate-100 rounded-lg appearance-none cursor-pointer accent-blue-700"
                 />
             </div>
 
             <div
-                class="bg-gray-50 rounded-2xl p-5 border border-gray-100 space-y-3"
+                class="bg-slate-50 rounded-2xl p-5 border border-slate-100 space-y-4"
             >
-                <p
-                    class="text-xs font-bold text-gray-400 uppercase tracking-wider"
-                >
-                    Est. Additional Annual Revenue (Avg. 4% Gain)
-                </p>
-                <p
-                    id="annual-savings"
-                    class="text-3xl font-black text-accent-green"
-                >
-                    破 1,440,000
-                </p>
+                <div>
+                    <p
+                        class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1"
+                    >
+                        Est. Additional Annual Revenue (Avg. 4% Gain)
+                    </p>
+                    <p
+                        id="annual-savings"
+                        class="text-3xl font-black text-emerald-600"
+                    >
+                        ₺ 57,600,000
+                    </p>
+                </div>
 
                 <div
-                    class="grid grid-cols-2 gap-4 pt-3 border-t border-gray-200/60 text-xs"
+                    class="grid grid-cols-2 gap-4 pt-4 border-t border-slate-200/60 text-xs"
                 >
                     <div>
-                        <p class="text-gray-400 font-medium">
+                        <p class="text-slate-400 font-medium mb-0.5">
                             10-Year Cumulative
                         </p>
                         <p
                             id="ten-year-savings"
-                            class="font-bold text-dark text-sm mt-0.5"
+                            class="font-bold text-slate-900 text-sm"
                         >
-                            ₺ 14,400,000
+                            ₺ 576,000,000
                         </p>
                     </div>
                     <div>
-                        <p class="text-gray-400 font-medium">
+                        <p class="text-slate-400 font-medium mb-0.5">
                             CO₂ Reduction / Year
                         </p>
                         <p
                             id="co2-reduction"
-                            class="font-bold text-dark text-sm mt-0.5"
+                            class="font-bold text-slate-900 text-sm"
                         >
-                            9.0 ton
+                            9,000 ton
                         </p>
                     </div>
                 </div>
             </div>
 
             <button
-                class="w-full py-4 bg-primary-blue hover:bg-blue-700 text-white font-bold rounded-xl transition-colors shadow-lg shadow-blue-600/10"
+                class="w-full py-4 bg-blue-800 hover:bg-blue-900 text-white font-bold rounded-xl transition-colors shadow-lg shadow-blue-800/20 text-sm tracking-wide"
             >
-                Get Detailed Analysis Report
+                Request Detailed Asset Yield Report
             </button>
         </div>
     </div>
@@ -200,35 +229,38 @@
     const co2Reduction = document.getElementById("co2-reduction");
 
     function updateCalculator() {
+        if (!powerSlider || !productionSlider || !priceSlider) return;
+
         const power = parseInt(powerSlider.value);
-        const production = parseInt(productionSlider.value) * 1000; // MWh to kWh
+        const productionMWh = parseInt(productionSlider.value);
+        const productionkWh = productionMWh * 1000 * 1000; // MWh'ı kWh'a çevirme logic'i
         const price = parseFloat(priceSlider.value);
 
-        // Güncel değer yazıları
+        // Değerleri HTML formatında yazdır
         if (powerValue)
             powerValue.textContent = `${power.toLocaleString("tr-TR")} MW`;
         if (productionValue)
-            productionValue.textContent = `${(production / 1000).toLocaleString("tr-TR")} MWh`;
+            productionValue.textContent = `${(productionMWh * 1000).toLocaleString("tr-TR")} MWh`;
         if (priceValue) priceValue.textContent = `₺ ${price.toFixed(1)} / kWh`;
 
-        // Hesaplamalar (Ortalama %4 verim artışı temel alınmıştır)
-        const efficiencyIncrease = production * 0.04;
-        const annualIncome = efficiencyIncrease * price;
+        // Hesaplama Modeli (%4 kazanç üzerinden)
+        const efficiencyIncreasekWh = productionkWh * 0.04;
+        const annualIncome = productionMWh * 1000 * 1000 * 0.04 * price;
         const tenYearIncome = annualIncome * 10;
-        const co2Saved = (efficiencyIncrease * 0.5) / 1000;
+        const co2Saved = productionMWh * 1000 * 0.04 * 0.5;
 
         if (annualSavings)
             annualSavings.textContent = `₺ ${Math.round(annualIncome).toLocaleString("tr-TR")}`;
         if (tenYearSavings)
             tenYearSavings.textContent = `₺ ${Math.round(tenYearIncome).toLocaleString("tr-TR")}`;
         if (co2Reduction)
-            co2Reduction.textContent = `${co2Saved.toFixed(1)} ton`;
+            co2Reduction.textContent = `${Math.round(co2Saved).toLocaleString("tr-TR")} ton`;
     }
 
     powerSlider?.addEventListener("input", updateCalculator);
     productionSlider?.addEventListener("input", updateCalculator);
     priceSlider?.addEventListener("input", updateCalculator);
 
-    // İlk açılışta tetikle
+    // Başlangıç tetiklemesi
     updateCalculator();
 </script>
