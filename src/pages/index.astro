@@ -1,59 +1,66 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Navbar from "../components/Navbar.astro";
+// 1. Yeni hazırladığımız harika Hero bileşenini import ediyoruz
 import Hero from "../components/Hero.astro";
-import Metrics from "../components/Metrics.astro";
-import Solution from "../components/Solution.astro";
-import Cases from "../components/Cases.astro";
-import Contact from "../components/Contact.astro";
 ---
 
-<Layout title="Materix Nano Teknoloji A.Ş. | Advanced Hydrophobic Coatings">
-	<Navbar />
-
-	<main
-		class="relative pt-20 overflow-x-hidden bg-[#f6f6f5] text-[#414141] font-sans selection:bg-[#44534b] selection:text-white"
-	>
-		<section id="home" class="scroll-mt-20">
-			<Hero />
-		</section>
-
-		<section class="bg-[#44534b] text-[#f6f6f5]">
-			<Metrics />
-		</section>
-
-		<section id="solution" class="py-24 scroll-mt-20">
-			<Solution />
-		</section>
-
-		<section
-			id="cases"
-			class="py-24 bg-white scroll-mt-20 border-t border-b border-gray-100"
+<Layout title="Materix Nano Teknoloji | Geleceğin Teknolojisini Yaratıyoruz">
+	<main class="min-h-screen flex flex-col justify-between bg-brand-dark">
+		<nav
+			class="border-b border-white/5 bg-brand-dark/80 backdrop-blur-md sticky top-0 z-50"
 		>
-			<Cases />
-		</section>
+			<div
+				class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between"
+			>
+				<div class="flex items-center gap-2">
+					<span
+						class="text-2xl font-extrabold tracking-tight text-white"
+					>
+						MATERIX<span class="text-brand-teal">.</span>
+					</span>
+				</div>
+				<div
+					class="hidden md:flex items-center gap-8 font-medium text-sm"
+				>
+					<a href="/" class="text-brand-teal">Anasayfa</a>
+					<a
+						href="/hakkimizda"
+						class="text-gray-400 hover:text-white transition-colors"
+						>Hakkımızda</a
+					>
+					<a
+						href="/teknoloji"
+						class="text-gray-400 hover:text-white transition-colors"
+						>Teknoloji</a
+					>
+					<a
+						href="/urunler"
+						class="text-gray-400 hover:text-white transition-colors"
+						>Ürünler</a
+					>
+					<a
+						href="/haberler"
+						class="text-gray-400 hover:text-white transition-colors"
+						>Bizden Haberler</a
+					>
+					<a
+						href="/iletisim"
+						class="px-4 py-2 bg-white text-brand-dark rounded-lg hover:bg-gray-100 transition-colors"
+						>İletişim</a
+					>
+				</div>
+			</div>
+		</nav>
 
-		<section id="contact" class="py-24 scroll-mt-20">
-			<Contact />
-		</section>
-	</main>
+		<Hero />
 
-	<footer class="bg-[#414141] text-[#f6f6f5] py-8 border-t border-gray-800">
-		<div
-			class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400"
+		<footer
+			class="bg-brand-dark text-gray-500 py-8 border-t border-white/5 text-center text-sm"
 		>
 			<p>
-				&copy; 2026 Materix Nano Teknoloji San. Tic. A.Ş. All rights
-				reserved.
+				&copy; 2026 Materix Nano Teknoloji San. Tic. A.Ş. Tüm Hakları
+				Saklıdır.
 			</p>
-			<div class="flex gap-6">
-				<a href="#home" class="hover:text-white transition-colors"
-					>Privacy Policy</a
-				>
-				<a href="#home" class="hover:text-white transition-colors"
-					>Terms of Use</a
-				>
-			</div>
-		</div>
-	</footer>
+		</footer>
+	</main>
 </Layout>
