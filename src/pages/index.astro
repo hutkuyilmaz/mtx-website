@@ -1,66 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro";
-// 1. Yeni hazırladığımız harika Hero bileşenini import ediyoruz
 import Hero from "../components/Hero.astro";
+import Solution from "../components/Solution.astro";
+import Cases from "../components/Cases.astro";
 ---
 
-<Layout title="Materix Nano Teknoloji | Geleceğin Teknolojisini Yaratıyoruz">
-	<main class="min-h-screen flex flex-col justify-between bg-brand-dark">
-		<nav
-			class="border-b border-white/5 bg-brand-dark/80 backdrop-blur-md sticky top-0 z-50"
-		>
-			<div
-				class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between"
-			>
-				<div class="flex items-center gap-2">
-					<span
-						class="text-2xl font-extrabold tracking-tight text-white"
-					>
-						MATERIX<span class="text-brand-teal">.</span>
-					</span>
-				</div>
-				<div
-					class="hidden md:flex items-center gap-8 font-medium text-sm"
-				>
-					<a href="/" class="text-brand-teal">Anasayfa</a>
-					<a
-						href="/hakkimizda"
-						class="text-gray-400 hover:text-white transition-colors"
-						>Hakkımızda</a
-					>
-					<a
-						href="/teknoloji"
-						class="text-gray-400 hover:text-white transition-colors"
-						>Teknoloji</a
-					>
-					<a
-						href="/urunler"
-						class="text-gray-400 hover:text-white transition-colors"
-						>Ürünler</a
-					>
-					<a
-						href="/haberler"
-						class="text-gray-400 hover:text-white transition-colors"
-						>Bizden Haberler</a
-					>
-					<a
-						href="/iletisim"
-						class="px-4 py-2 bg-white text-brand-dark rounded-lg hover:bg-gray-100 transition-colors"
-						>İletişim</a
-					>
-				</div>
-			</div>
-		</nav>
-
+<Layout title="MATERIX | Nanoteknoloji ile Güneş Enerjisinde Devrim">
+	<main>
 		<Hero />
 
-		<footer
-			class="bg-brand-dark text-gray-500 py-8 border-t border-white/5 text-center text-sm"
-		>
-			<p>
-				&copy; 2026 Materix Nano Teknoloji San. Tic. A.Ş. Tüm Hakları
-				Saklıdır.
-			</p>
-		</footer>
+		<div id="about">
+			<Solution />
+		</div>
+
+		<div id="cases">
+			<Cases />
+		</div>
 	</main>
 </Layout>

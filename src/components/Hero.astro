@@ -1,111 +1,234 @@
 ---
-// Eğer ikonları Lucide gibi harici bir kütüphaneden çekmiyorsak, performansı korumak için
-// tasarımdaki Sparkles ve ArrowRight ikonlarını saf SVG olarak buraya entegre ediyoruz.
+// src/components/Hero.astro
 ---
 
 <section
-    class="relative min-h-[85vh] flex items-center overflow-hidden bg-gradient-to-br from-brand-dark via-slate-900 to-brand-dark py-24 md:py-32"
+    class="relative min-h-[90vh] flex items-center gradient-bg py-20 overflow-hidden"
 >
-    <div class="absolute inset-0 overflow-hidden pointer-events-none">
-        <div
-            class="absolute top-20 left-10 w-72 h-72 bg-brand-teal/10 rounded-full blur-3xl animate-pulse"
-        >
-        </div>
-        <div
-            class="absolute bottom-20 right-10 w-96 h-96 bg-brand-green/10 rounded-full blur-3xl animate-pulse"
-            style="animation-delay: 1s;"
-        >
-        </div>
-        <div
-            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-teal/5 rounded-full blur-3xl"
-        >
-        </div>
-    </div>
-
+    <div class="absolute inset-0 bg-black/10 z-0"></div>
     <div
-        class="absolute inset-0 opacity-5 pointer-events-none"
-        style="background-image: linear-gradient(rgba(16, 185, 129, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(16, 185, 129, 0.1) 1px, transparent 1px); background-size: 50px 50px;"
+        class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-12 gap-12 items-center w-full"
     >
-    </div>
-
-    <div
-        class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
-    >
-        <div
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 backdrop-blur-md border border-white/10 mb-8 shadow-xl"
-        >
-            <svg
-                xmlns="http://www.w3.org/2000/ajax/libs/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="text-brand-teal"
-                ><path
-                    d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275Z"
-                ></path><path d="m5 3 1 2.5L8.5 6 6 7 5 9.5 4 7 1.5 6 4 5.5Z"
-                ></path><path
-                    d="m19 17 1 2.5 2.5.5-2.5 1-1 2.5-1-2.5-2.5-1 2.5-1Z"
-                ></path></svg
+        <div class="md:col-span-7 text-white space-y-6">
+            <h1
+                class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight"
             >
-            <span class="text-sm text-gray-200 font-medium tracking-wide"
-                >Öncü Nano Kaplama Teknolojisi</span
-            >
-        </div>
-
-        <h1
-            class="mb-6 text-white max-w-5xl mx-auto text-4xl sm:text-6xl font-black tracking-tight leading-tight md:leading-none"
-        >
-            <span class="block mb-4">Teknolojiyi Şekillendiriyoruz</span>
-            <span
-                class="block text-transparent bg-clip-text bg-gradient-to-r from-white via-brand-teal to-brand-green"
-            >
-                Geleceğin Nano Kaplamaları
-            </span>
-        </h1>
-
-        <p
-            class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed font-normal"
-        >
-            Yüzeyleri hidrofobik, fotokatalitik ve koruyucu özelliklerle
-            dönüştüren, 300nm kalınlığındaki devrimsel ince filmlerimizle güneş
-            enerjisi verimliliğini en üst düzeye çıkarıyor ve sürdürülebilir bir
-            gelecek sunuyoruz.
-        </p>
-
-        <div
-            class="flex flex-col sm:flex-row gap-4 justify-center items-center"
-        >
-            <a
-                href="/teknoloji"
-                class="group px-8 py-4 bg-brand-teal hover:bg-brand-teal/90 text-brand-dark font-bold rounded-xl transition-all shadow-lg shadow-brand-teal/20 flex items-center gap-2"
-            >
-                Teknolojiyi Keşfet
-                <svg
-                    xmlns="http://www.w3.org/2000/ajax/libs/svg"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="group-hover:translate-x-1 transition-transform"
-                    ><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"
-                    ></path></svg
+                Partnering for Regional <br class="hidden sm:inline" /><span
+                    class="text-yellow-300">Energy Leadership</span
                 >
-            </a>
-            <a
-                href="/iletisim"
-                class="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white font-semibold rounded-xl hover:bg-white/20 transition-all"
+            </h1>
+            <p class="text-lg text-white/90 max-w-xl leading-relaxed">
+                Yüzeyleri hidrofobik, fotokatalitik ve koruyucu özelliklerle
+                dönüştüren devrimsel ince filmlerimizle sürdürülebilir bir
+                geleceğe öncülük ediyoruz.
+            </p>
+            <ul class="space-y-3 font-medium text-white/90">
+                <li class="flex items-center gap-3">
+                    <span
+                        class="w-5 h-5 bg-white/20 rounded-full flex items-center justify-center text-xs"
+                        >✓</span
+                    >
+                    Güneş paneli verimliliğini %3 - %9 artırın.
+                </li>
+                <li class="flex items-center gap-3">
+                    <span
+                        class="w-5 h-5 bg-white/20 rounded-full flex items-center justify-center text-xs"
+                        >✓</span
+                    >
+                    Temizlik ve bakım maliyetlerini %50 azaltın.
+                </li>
+            </ul>
+            <div class="flex flex-wrap gap-4 pt-4">
+                <a
+                    href="#about"
+                    class="px-8 py-4 bg-yellow-400 text-dark font-bold rounded-xl hover:bg-yellow-300 transition-all shadow-lg shadow-yellow-500/20"
+                >
+                    Explore Partnership →
+                </a>
+                <a
+                    href="#calculator"
+                    class="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white font-semibold rounded-xl hover:bg-white/20 transition-all"
+                >
+                    📊 Schedule Executive Briefing
+                </a>
+            </div>
+        </div>
+
+        <div
+            id="calculator"
+            class="md:col-span-5 bg-white rounded-3xl p-8 shadow-2xl space-y-6 border border-gray-100"
+        >
+            <div class="flex items-center gap-3 border-b border-gray-100 pb-4">
+                <span class="text-2xl">📋</span>
+                <h2 class="text-xl font-bold text-dark">
+                    Quick Revenue Calculator
+                </h2>
+            </div>
+
+            <div class="space-y-2">
+                <div
+                    class="flex justify-between text-sm font-semibold text-gray-600"
+                >
+                    <label for="power-slider">System Size (Tesis Gücü)</label>
+                    <span id="power-value" class="text-primary-blue font-bold"
+                        >300 MW</span
+                    >
+                </div>
+                <input
+                    type="range"
+                    id="power-slider"
+                    min="10"
+                    max="1000"
+                    value="300"
+                    class="w-full h-2 bg-gray-100 rounded-lg appearance-none cursor-pointer accent-primary-blue"
+                />
+            </div>
+
+            <div class="space-y-2">
+                <div
+                    class="flex justify-between text-sm font-semibold text-gray-600"
+                >
+                    <label for="production-slider"
+                        >Annual Production (Yıllık Üretim)</label
+                    >
+                    <span
+                        id="production-value"
+                        class="text-primary-blue font-bold">450,000 MWh</span
+                    >
+                </div>
+                <input
+                    type="range"
+                    id="production-slider"
+                    min="15"
+                    max="1500"
+                    value="450"
+                    class="w-full h-2 bg-gray-100 rounded-lg appearance-none cursor-pointer accent-primary-blue"
+                />
+            </div>
+
+            <div class="space-y-2">
+                <div
+                    class="flex justify-between text-sm font-semibold text-gray-600"
+                >
+                    <label for="price-slider"
+                        >Tariff Price (Elektrik Fiyatı)</label
+                    >
+                    <span id="price-value" class="text-primary-blue font-bold"
+                        >₺ 3.2 / kWh</span
+                    >
+                </div>
+                <input
+                    type="range"
+                    id="price-slider"
+                    min="1.0"
+                    max="6.0"
+                    step="0.1"
+                    value="3.2"
+                    class="w-full h-2 bg-gray-100 rounded-lg appearance-none cursor-pointer accent-primary-blue"
+                />
+            </div>
+
+            <div
+                class="bg-gray-50 rounded-2xl p-5 border border-gray-100 space-y-3"
             >
-                Bize Ulaşın
-            </a>
+                <p
+                    class="text-xs font-bold text-gray-400 uppercase tracking-wider"
+                >
+                    Est. Additional Annual Revenue (Avg. 4% Gain)
+                </p>
+                <p
+                    id="annual-savings"
+                    class="text-3xl font-black text-accent-green"
+                >
+                    破 1,440,000
+                </p>
+
+                <div
+                    class="grid grid-cols-2 gap-4 pt-3 border-t border-gray-200/60 text-xs"
+                >
+                    <div>
+                        <p class="text-gray-400 font-medium">
+                            10-Year Cumulative
+                        </p>
+                        <p
+                            id="ten-year-savings"
+                            class="font-bold text-dark text-sm mt-0.5"
+                        >
+                            ₺ 14,400,000
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-gray-400 font-medium">
+                            CO₂ Reduction / Year
+                        </p>
+                        <p
+                            id="co2-reduction"
+                            class="font-bold text-dark text-sm mt-0.5"
+                        >
+                            9.0 ton
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <button
+                class="w-full py-4 bg-primary-blue hover:bg-blue-700 text-white font-bold rounded-xl transition-colors shadow-lg shadow-blue-600/10"
+            >
+                Get Detailed Analysis Report
+            </button>
         </div>
     </div>
 </section>
+
+<script>
+    const powerSlider = document.getElementById(
+        "power-slider",
+    ) as HTMLInputElement;
+    const productionSlider = document.getElementById(
+        "production-slider",
+    ) as HTMLInputElement;
+    const priceSlider = document.getElementById(
+        "price-slider",
+    ) as HTMLInputElement;
+
+    const powerValue = document.getElementById("power-value");
+    const productionValue = document.getElementById("production-value");
+    const priceValue = document.getElementById("price-value");
+
+    const annualSavings = document.getElementById("annual-savings");
+    const tenYearSavings = document.getElementById("ten-year-savings");
+    const co2Reduction = document.getElementById("co2-reduction");
+
+    function updateCalculator() {
+        const power = parseInt(powerSlider.value);
+        const production = parseInt(productionSlider.value) * 1000; // MWh to kWh
+        const price = parseFloat(priceSlider.value);
+
+        // Güncel değer yazıları
+        if (powerValue)
+            powerValue.textContent = `${power.toLocaleString("tr-TR")} MW`;
+        if (productionValue)
+            productionValue.textContent = `${(production / 1000).toLocaleString("tr-TR")} MWh`;
+        if (priceValue) priceValue.textContent = `₺ ${price.toFixed(1)} / kWh`;
+
+        // Hesaplamalar (Ortalama %4 verim artışı temel alınmıştır)
+        const efficiencyIncrease = production * 0.04;
+        const annualIncome = efficiencyIncrease * price;
+        const tenYearIncome = annualIncome * 10;
+        const co2Saved = (efficiencyIncrease * 0.5) / 1000;
+
+        if (annualSavings)
+            annualSavings.textContent = `₺ ${Math.round(annualIncome).toLocaleString("tr-TR")}`;
+        if (tenYearSavings)
+            tenYearSavings.textContent = `₺ ${Math.round(tenYearIncome).toLocaleString("tr-TR")}`;
+        if (co2Reduction)
+            co2Reduction.textContent = `${co2Saved.toFixed(1)} ton`;
+    }
+
+    powerSlider?.addEventListener("input", updateCalculator);
+    productionSlider?.addEventListener("input", updateCalculator);
+    priceSlider?.addEventListener("input", updateCalculator);
+
+    // İlk açılışta tetikle
+    updateCalculator();
+</script>
